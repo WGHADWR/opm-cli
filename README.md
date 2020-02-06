@@ -1,24 +1,24 @@
 # opm-cli
 
-## Project setup
-```
-yarn install
-```
+## 系统需求
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+  * Nodejs >= 10
+  * vue-cli@3
+  * Typescript >= 3.5.3
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## dependencies
 
-### Lints and fixes files
-```
-yarn lint
-```
+  * axios
+  * qs
+  * Antd Vue
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 项目结构
+
+  * assets 资源
+  * config 系统配置
+  * common 工具库
+  * components 系统级(通用)组件
+  * views 页面
+  * views/components 页面级组件
+  * router 路由配置
+  * services 数据服务
