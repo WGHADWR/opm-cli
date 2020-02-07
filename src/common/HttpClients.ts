@@ -65,8 +65,9 @@ export class HttpClients {
     } catch (e) {
       console.log(e);
       this.dispatchInterceptor(this.exceptionInterceptors, { e });
+
+      return { status: -1, error: e };
     }
-    return {};
   }
 
   public static async get(url: string, params?: any): Promise<any> {
