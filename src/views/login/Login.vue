@@ -49,7 +49,7 @@ export default Vue.extend({
         const { status, data } = result;
         if (status !== 0) {
           this.$message.warning('用户名或密码错误!');
-          return;
+          // return;
         }
         this.$router.replace({ path: '/pages/dashboard' });
       } catch (e) {

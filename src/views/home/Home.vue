@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     account() {
-      return AppConfig.account || {};
+      return AppConfig.Account || {};
     },
   },
 };

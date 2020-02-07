@@ -15,11 +15,11 @@ export class AppConfig {
     this._token = v;
   }
 
-  public static get account() : any {
+  public static get Account() : any {
     return this._account;
   }
 
-  public static set account(v : any) {
+  public static set Account(v : any) {
     this._account = v;
   }
 
