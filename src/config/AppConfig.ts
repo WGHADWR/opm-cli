@@ -5,11 +5,22 @@ export class AppConfig {
   public static readonly ServerUrl = 'http://localhost:8000';
 
   private static _token : string;
+  private static _account : any;
+
   public static get Token() : string {
     return this._token;
   }
+
   public static set Token(v : string) {
     this._token = v;
+  }
+
+  public static get account() : any {
+    return this._account;
+  }
+
+  public static set account(v : any) {
+    this._account = v;
   }
 
   public static init() {

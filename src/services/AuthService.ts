@@ -1,5 +1,6 @@
 import { AppConfig } from '@/config/AppConfig';
 import { HttpClients } from '@/common/HttpClients';
+import { LocalStorage } from '@/common/LocalStorage';
 
 export const AuthService = {
 
@@ -9,6 +10,8 @@ export const AuthService = {
   },
 
   async logout() {
+    LocalStorage.clear();
+
     const url = `${AppConfig.ServerUrl}/api/auth/logout`;
     return HttpClients.get(url);
   },
