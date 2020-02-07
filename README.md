@@ -3,7 +3,7 @@
 ## 系统需求
 
   * Nodejs >= 10
-  * vue-cli@3
+  * @vue/cli >= 4.1.2
   * Typescript >= 3.5.3
 
 ## dependencies
